@@ -4,35 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portafolio</title>
+    <title>Mi Portafolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- My custom css -->
-    <link rel="stylesheet" href="styles.css/">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Mi Portafolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Sobre Mí</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contacto</a>
-                </li>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="top">
+            <div id="logo">
+                <span class="avatar"><img src="images/mypicture.jpg" alt="Mi foto" width="118" height="115" /></span>
+                <h1 id="title">César Muñoz</h1>
+                <p>Ingeniero de Sistemas de la UdeA</p>
+                <p id="tecnos">Desarrollador Java, estudiando para full stack: Java|Angular|SQLServer|MongoDB|Git|Docker
+                </p>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#top" id="top-link"><span class="fa fa-home"></span> Perfil</a></li>
+                    <li><a href="#portfolio" id="portfolio-link"><span class="fa fa-book"></span> Portafolio</a></li>
+                    <li><a href="#about" id="about-link"><span class="fa fa-user"></span> Sobre mí</a></li>
+                    <li><a href="#contact" id="contact-link"><span class="fa fa-envelope"></span> Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="bottom">
+            <!-- Social Icons -->
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/cesar-munoz-ace" target="_blank"
+                        class="fa fa-linkedin-square"><span class="label">-LinkedIn</span></a></li>
             </ul>
         </div>
-    </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+        <!-- Intro -->
+        <section id="top" class="one dark cover">
+            <div class="container">
+                <header>
+                    <h2 class="alt">Hola! soy <strong>César Muñoz</strong>, este es mi<br />sitio web con mi Portafolio,
+                        gracias por visitarlo.</h2>
+                    <p>Datos de contacto:&nbsp;
+                        <span class="fa fa-envelope"></span> <strong>cesare.munoz@gmail.com</strong>&nbsp;&nbsp;
+                        <span class="fa fa-whatsapp"></span> <strong>(+57) 3003603925</strong></br>
+                        <a href="images/César_Muñoz_Resume.pdf" target="_blank">Mi hoja de vida la puedes ver aquí</a>
+                    </p>
+                    <p>Soy un desarrollador con experiencia en varias tecnologías y lenguajes de programación. Mi
+                        principal foco es Java, con Spring boot, enfocado a microservicios. Tengo experiencia con
+                        sistemas de versionamiento como git, bases de datos como SQLServer, MongoDB, Oracle SQL, Docker.
+                        En la parte de front estoy familiarizado con Angular</p>
+                </header>
+                <footer>
+                    <a href="https://www.linkedin.com/in/cesar-munoz-ace" target="_blank"
+                        class="button scrolly">LinkedIn: César
+                        Muñoz</a>
+                </footer>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="two">
+            <div class="container">
+                <header>
+                    <h2>Portafolio</h2>
+                </header>
+                <p>He trabajado en varias empresas y proyectos</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <article class="item">
+                            <a href="https://www.grupoexito.com.co/es" target="_blank" class="image fit">Grupo Exito</a>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <article class="item">
+                            <a href="https://www.tigo.com.co/" target="_blank" class="image fit">UNE Tigo</a>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <article class="item">
+                            <a href="https://ingeneo.com.co/" target="_blank" class="image fit">Ingeneo SAS<img
+                                    src="images/project2.jpg" alt="" /></a>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <article class="item">
+                            <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/gestion-investigacion/!ut/p/z1/tZRLc4IwEMe_ih48MnkhwWMKjKJUtIoKl06AYOlo8IHa6acvWseZWl8zai7Zzfz3t9nNAwRgBALJ1-mY52km-aTw_UB7b3erFsIGdOqUaZA5tZ7dsggmugqGO4FeMzBiKnRgC1Uh61qddt81OmYTg-CWeHhmMHhb_AVBcBk_AH4T-Au58SkrYMFOfyjHNd2iHM20Gn1EiIHwXnDI59rEgt1au9ohdRurlBwTTjTk2pb8oiR6tiQXguE6FRvgyWwxLY6otyXOojQGfqwjnoQ0UrioUUVNMFZClXJFDyMVEY3DMAlB42oGdGeGY7w7oLDb0y27ykwHtfBz8Y_e_VFz6FPxKn4u_sHN0XfX3xjokHQ8BF3tTnzz2nMv_qP0cz4PGAiiTObiKwejWbbI-WQVC16BfPnX-8im4tdO5Vos8-Jni9JyRMohkRU43q7svVIsShNeOiXbZZJpnG2JB2c5FXJVgQsxnvDCzDMwm3qeJ7U3K3m1iOo3198vbeX_5DBWLv8ALbA7bg!!/?1dmy&urile=wcm%3Apath%3A/PortalUdeA/asPortalUdeA/asHomeUdeA/Investigaci%21c3%21b3n/Gesti%21c3%21b3n+de+la+investigaci%21c3%21b3n/Contenido/asContenidosMenu/siiu"
+                                class="image fit"><img src="images/project3.jpg" alt="" />SIIU Universidad de
+                                Antioquia</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="three">
+            <div class="container">
+                <header>
+                    <h2>Sobre mí</h2>
+                </header>
+                <a href="#" class="image fit"><img src="images/about.jpg" alt="" /></a>
+                <p>Soy un desarrollador entusiasta y estudioso con experiencia en varias tecnologías de desarrollo. Soy
+                    una persona muy familiar, me gusta salir a correr al aire libre, tocar la guitarra y practicar artes
+                    marciales. Soy tranquilo pero concentrado, pongo atención a los detalles y me gusta trabajar en
+                    equipo.</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="four">
+            <div class="container">
+                <header>
+                    <h2>Contacto</h2>
+                </header>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>¡Gracias por contactar! Por favor, completa el siguiente formulario y te responderé lo más
+                            pronto posible.</p>
+                        <form action="https://formspree.io/f/xqazzzly" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" name="_replyto" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>También puedes contactarme directamente:</p>
+                        <ul class="contact-info">
+                            <li><i class="fa fa-envelope"></i> <strong>Email:</strong> cesare.munoz@gmail.com </li>
+                            <li><i class="fa fa-phone"></i> <strong>Teléfono:</strong> (+57) 3003603925</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <ul class="copyright">
+            <li>Email: cesare.munoz@gmail.com </li>
+            <li> Teléfono: (+57) 3003603925</li>
+        </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

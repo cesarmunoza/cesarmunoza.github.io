@@ -1,0 +1,196 @@
+/* Custom CSS */
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    position: fixed;
+    width: 282px;
+    height: 100vh;
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.header .top {
+    padding: 1.5em 0;
+}
+
+.header #logo {
+    padding-bottom: 1.5em;
+}
+
+.header #logo img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.header h1,
+.header p {
+    margin: 0;
+    color: #fff;
+}
+
+.header nav {
+    flex-grow: 1;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    margin: 1em 0;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    transition: background 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.header nav ul li a .fa {
+    margin-right: 10px;
+}
+
+.header .bottom {
+    padding: 1.5em 0;
+}
+
+.header .bottom .icons {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header .bottom .icons li {
+    margin: 0 10px;
+}
+
+.header .bottom .icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.header .bottom .icons a:hover {
+    color: #ccc;
+}
+
+#tecnos {
+    font-size: smaller;
+}
+
+#main {
+    margin-left: 250px;
+    padding: 2em;
+}
+
+#top {
+    background: linear-gradient(135deg, #687068, #b98f8f);
+    color: #fff;
+    min-height: 45vh;
+    padding: 8em 0;
+    text-align: center;
+}
+
+#top h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#top p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+#top .button {
+    background: #fff;
+    color: #333;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#top .button:hover {
+    background: #ccc;
+}
+
+section {
+    padding: 4em 0;
+}
+
+.cover {
+    padding: 8em 0;
+    text-align: center;
+}
+
+.cover h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.cover p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cover .button {
+    background: #fff;
+    color: #333;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cover .button:hover {
+    background: #ccc;
+}
+
+/* Personalización para la Sección de Contacto */
+#contact {
+    background-color: #f9f9f9;
+    padding: 4em 0;
+}
+
+#contact h2 {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.contact-info {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-info li {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 1.5em;
+}
